@@ -135,18 +135,26 @@ Evaluate the following code. Is the code written correctly? What would be the co
         print('This message has a syntax error!")
         print(Churrigueresco)
 
- - Answer:
+ - Answer: The second line is incorrect since there is no known variable by that name, and even if there were it would be an invalid name since it starts with a capital letter.
 
 Evaluate the following code. Is the code written correctly? What would be the correct code?
         someNumber=360
         print(' The Number is someNumber ')
 Expected:  The Number is 360
 
- - Answer:
+ - Answer: This is incorrect since the out come would be "The Number is someNumber" this is because someNumber is part of the string and not left as its own variable.
 
 Define a function that takes 2 or more parameters and prints a single line using them as part of a functional string. The function may do anything you chose but the function name and parameter names must be representative of what they are.
 
- - Answer:
+ - Answer: One or more lines of the code would be used to create and define a variable, this would then lead into a line of code that prints something that is related to de values
+Example:
+
+numberOfFemaleStudents = 14
+numberOfMaleStudents = 10
+numberOfStudents = numberOfFemaleStudents + numberOfMaleStudents
+print(numberOfStudents)
+
+Expected outcome: 24
 
 Type down any class notes below this sentence:
 
