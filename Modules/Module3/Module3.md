@@ -96,24 +96,24 @@ print(type(age))
 
 What is the difference between "42" and 42.
 
- - Answer:
+ - Answer: 42 is an integer and 42. is a Float because an integer does not contain decimals while a Float only contains decimals
 
 Define the boolean operators: >, <, ==, >=, <=
 
- - Answer:
+ - Answer: The operater > checks if the value is greater than the other, >= checks if the value is greater or equal to the other value, < checks if the value is less than, <= checks if the value is less or equal to, and == checks to see if the value is equal or not.
 
 How do you address an index in an list? Write a python code that assigns 34 to a new variable by accessing the value stored in:  
         arr = [4, 3, -1, 4, 34]
 
- - Answer:
+ - Answer: myList[34]= 33
 
 What is the first index of an list? Why?
 
- - Answer:
+ - Answer: The first index of a list is 0, because it counts as a number and it is not seen for the value
 
 Provide an original example of a null value. It must prove your understanding of the concept.
 
- - Answer:
+ - Answer: In a list of guests staying in a Hotel, room 254 is vacant making the value of the guest staying in the room Null.
 
 Type down any class notes below this sentence:
 
