@@ -37,7 +37,7 @@ A Boolean is a value that is represented by a single bit. This means that it is 
 >
 >i = 10
 >
->(i < 15) is False
+>(i < 15) is True
 
 <br>
 
@@ -107,7 +107,7 @@ How do you address an index in an list? Write a python code that assigns 34 to a
 
  - Answer: myList[34]= 33
 
-What is the first index of an list? Why?
+What is the first index of a list? Why?
 
  - Answer: The first index of a list is 0, because it counts as a number and it is not seen for the value
 
