@@ -126,7 +126,7 @@ print(f"Or use the print directly {myNumber}")
 
 
 # Class Discussion
-## Answer the questions on the Markdown file located within your <u>`Module4`</u> directory (Module4.md)`(4pts)`
+## Answer the questions on the Markdown file located within your <u>`Module4`</u> directory (Module4.md)`(12pts)`
 <!-- Welcome! These are your questions. -->
 <!-- Answer using full sentences to receive all points. -->
 <!-- 
@@ -144,8 +144,9 @@ Expected:  The Number is 360
 
  - Answer: This is incorrect since the out come would be "The Number is someNumber" this is because someNumber is part of the string and not left as its own variable.
 
-Define a function that takes 2 or more parameters and prints a single line using them as part of a functional string. The function may do anything you chose but the function name and parameter names must be representative of what they are.
+Define a function that takes 2 or more string parameters and prints a single line using them as part of a functional string. The function may do anything you chose but the function name and parameter names must be representative of what they are.
 
+<<<<<<< HEAD
  - Answer: One or more lines of the code would be used to create and define a variable, this would then lead into a line of code that prints something that is related to de values
 Example:
 
@@ -155,6 +156,39 @@ numberOfStudents = numberOfFemaleStudents + numberOfMaleStudents
 print(numberOfStudents)
 
 Expected outcome: 24
+=======
+ - Answer:
+  
+
+
+Refer to this documentation webpage and google for the exercises below:
+https://www.w3schools.com/python/python_ref_string.asp
+
+
+How do you find the length of a string?
+Which code returns the length of the string s0:
+
+s0 = "What is my length? Store it as a number in a variable."
+
+ - Answer:
+
+How do you create a substring in python?
+Create a substring of s1 containing only my name. Store it in a variable called ss1.
+https://www.freecodecamp.org/news/how-to-substring-a-string-in-python/
+
+s1 = "Hello Student! My name is Carlos Jose Cobián. I enjoy coding and video games!"
+
+ - Answer: ss1 =
+
+Capitalize every letter of ss1 using a function. Store it in a variable called SS1.
+
+ - Answer: SS1 =
+
+
+This last section is not worth any points, but is worth looking into. It is good string manipulation practice and contains exercises that you may see in a pop quiz! 
+https://codingbat.com/python/String-1
+
+>>>>>>> e65c3e93596a7382cc63c680883c95699ffdab33
 
 Type down any class notes below this sentence:
 
