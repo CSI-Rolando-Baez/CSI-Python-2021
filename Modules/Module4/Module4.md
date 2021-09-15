@@ -17,7 +17,7 @@ In Python, the `input()` takes a string value typed by the user at the end of th
 
 <br>
 
-### *[The best way to learn about a language is always to read the documentation! These are the built in functions for python.](https://docs.python.org/3/library/functions.html)*
+### *[The best way to learn about a language is always to raed the documentation! These are the built in functions for python.](https://docs.python.org/3/library/functions.html)*
 
 For now we will use simple I/O (Input/Output) functions
 
@@ -66,7 +66,7 @@ greetStudent(name)
 <br>
 
 ## Concatenation
-The "`+`" operator doesn't just add 2 numbers, it can also "add" two strings.  Combining two strings is called *concatenation*. Be carefull when using concatenation as the operator may **add** numeric variables that are not defined as strings. All operands must be of type `string` for a concatenation.
+The "`+`" operator doesn't just add 2 numbers, it can also "add" two strings.  Combining two strings is called *concatenation*. Be carefull when using concatenation as the operator may **add** numeric variables that are not defined as strings.
 
 <br>
 
@@ -76,10 +76,10 @@ A Functional String accepts variables or <u>code blocks</u> `{}` into the constr
 
 A functional string is denoted by an "f" before the string initialization. eg.
 ```python
-var:str = "regular string"
+var:str = "representing a value"
 myNumber:float = 3.5
 
-myFunctionalString = f"Combine an existing {var} with a number such as: {myNumber} or execute something like {round(3.4 * 1.1)}"
+myFunctionalString = f"Combine an existing string {var} with a number such as: {myNumber} or {1}"
 
 print(myFunctionalString)
 
@@ -156,9 +156,6 @@ numberOfStudents = numberOfFemaleStudents + numberOfMaleStudents
 print(numberOfStudents)
 
 Expected outcome: 24
-=======
- - Answer:
-  
 
 
 Refer to this documentation webpage and google for the exercises below:
@@ -170,7 +167,9 @@ Which code returns the length of the string s0:
 
 s0 = "What is my length? Store it as a number in a variable."
 
- - Answer:
+ - Answer: 
+ s0 = 4
+ count(s0)
 
 How do you create a substring in python?
 Create a substring of s1 containing only my name. Store it in a variable called ss1.
@@ -178,11 +177,15 @@ https://www.freecodecamp.org/news/how-to-substring-a-string-in-python/
 
 s1 = "Hello Student! My name is Carlos Jose Cobián. I enjoy coding and video games!"
 
- - Answer: ss1 =
+ - Answer:
+s1 = "Hello Student! My name is Carlos Jose Cobián. I enjoy coding and video games!"
+ss1 = (s1[26:43])
+print(ss1)
 
 Capitalize every letter of ss1 using a function. Store it in a variable called SS1.
 
- - Answer: SS1 =
+ - Answer: 
+SS1 = ss1.upper()
 
 
 This last section is not worth any points, but is worth looking into. It is good string manipulation practice and contains exercises that you may see in a pop quiz! 
