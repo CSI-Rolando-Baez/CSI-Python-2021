@@ -169,7 +169,8 @@ s0 = "What is my length? Store it as a number in a variable."
 
  - Answer: 
  s0 = 4
- count(s0)
+ s2 = s0.count()
+ print(s2)
 
 How do you create a substring in python?
 Create a substring of s1 containing only my name. Store it in a variable called ss1.
