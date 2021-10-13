@@ -1,16 +1,7 @@
-class ObjectTesting:
- 
-    # default constructor
-    def __init__(self):
-        self.anobj = "ObjectTesting"
- 
-    # a method for printing data members
-    def print_AnObj(self):
-        print(self.anobj)
- 
- 
-# creating object of the class
-obj = ObjectTesting()
- 
-# calling the instance method using the object obj
-obj.print_AnObj()
+import json
+
+favorite_album = {"Artist": "Aether Realm", "Album": "Tarot", "Release year": "2017", "Number of songs": "11"}
+
+json_dump = json.dumps(favorite_album)
+
+print(json_dump)

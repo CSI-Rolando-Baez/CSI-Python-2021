@@ -41,7 +41,15 @@ What does JSON Stand for?
 
 Create an example of a JSON object with at least 4 values. It may represent anything but it must be original.
 
- - Answer:
+ - Answer: 
+ 
+ import json
+
+favorite_album = {"Artist": "Aether Realm", "Album": "Tarot", "Release year": "2017", "Number of songs": "11"}
+
+json_dump = json.dumps(favorite_album)
+
+print(json_dump)
 
 Type down any class notes below this sentence:
 
