@@ -85,7 +85,7 @@ What does JSON Stand for?
 
 Why are JSON formats important?
 
- - Answer:
+ - Answer: It allows us to create objects that can be universally used in different files of code by importing it.
 
 Create an example of a JSON object with at least 4 values. It may represent anything but it must be original.
 
@@ -101,11 +101,11 @@ print(json_dump)
 
 What is the difference between serialization and deserialization?
 
- - Answer:
+ - Answer: Serialization means to convert an object into a string while deserialization is the opposite, it coverts strings into objects.
 
 Research data persistance. What did you find?
 
- - Answer: 
+ - Answer: Data persistance refers to data that stays even after the process that created it has ended.
 
 Type down any class notes below this sentence:
 
