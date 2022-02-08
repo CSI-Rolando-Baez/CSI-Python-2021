@@ -23,3 +23,8 @@ for x in range(100):
         blood:RandomBlood = RandomBlood(**r)
         addresses.append(blood) 
         print(blood.id)
+
+        myFilePath = os.path.join(myFolderPath, f'{blood.uid}.json')
+
+        with open(myFilePath, 'w') as outfile:
+            json.dump(blood.__dict__, outfile)
