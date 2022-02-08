@@ -6,7 +6,7 @@ from RandomBlood import RandomBlood
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
-bloodURL = "https://random-data-api.com/api/blood/random_blood"
+bloodURL = "https://random-data-api.com/api/blood/random_blood?size=100"
 
 # Create directory
 myPath = Path(__file__).parents[0]
@@ -14,7 +14,7 @@ myFolderPath = os.path.join(myPath, 'responses')
 
 addresses:RandomBlood = [] 
 
-for r in range(100):
+for x in range(100):
 
     req = urllib.request.Request(bloodURL)
     requestData = json.loads(urllib.request.urlopen(req).read())
