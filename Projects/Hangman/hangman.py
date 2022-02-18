@@ -6,15 +6,28 @@ def get_word():
 
 get_word()
 
-def pick_letter():
+def get_input(hangmanWord):
   while True:
-    chosenLetter = input("Insert a letter... ")
-    # [chosenLetter.lower] will automatically turn the response given into lower case
-    if chosenLetter.lower() not in ( 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm'):
-      print ("not a valid answer")
-    #unfinshed statement
-      pick_letter()
+    letter = input("Choose letter")
+    if letter.isalpha():
+      break
+    print("Please choose a valid Character")
+    if letter in hangmanWord:
+    print('Correct Guess!')
+    elif letter not in hangmanWord:
+    
+    
+get_input()
 
+
+
+
+def print_word(hangmanWord):
+  blank_word = len(hangmanWord) * ['_']
+  print(blank_word)
+
+print_word()
+    
 steps = ["""
  
       ___________
@@ -111,3 +124,4 @@ steps = ["""
 
 """
 ]
+print(steps[0])
