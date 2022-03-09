@@ -1,15 +1,19 @@
 import pygame
 pygame.init()
 dis=pygame.display.set_mode((400,300))
-pygame.display.update()
+ 
 pygame.display.set_caption('Snake game by Edureka')
+# Defines the colors used in the game using RGB
+blue=(0,0,255)
+red=(255,0,0)
+ 
 game_over=False
 while not game_over:
     for event in pygame.event.get():
-        # This line alone allows the game to actually close when prompted to, when as before the game would not close
-        # unless the Terminal itself was closed
         if event.type==pygame.QUIT:
             game_over=True
- 
+    # Creates a square in the middle of the screen
+    pygame.draw.rect(dis,blue,[200,150,10,10])
+    pygame.display.update()
 pygame.quit()
 quit()
