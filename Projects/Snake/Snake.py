@@ -21,10 +21,17 @@ clock = pygame.time.Clock()
  
 snake_block = 10
 snake_speed = 15
-# Fonts used for messages.
+ 
 font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 35)
- # Separate function that is used to create the snake.
+ 
+# Creates a score meter using the score font created before.
+def Your_score(score):
+    value = score_font.render("Your Score: " + str(score), True, yellow)
+    dis.blit(value, [0, 0])
+ 
+ 
+ 
 def our_snake(snake_block, snake_list):
     for x in snake_list:
         pygame.draw.rect(dis, black, [x[0], x[1], snake_block, snake_block])
@@ -44,7 +51,7 @@ def gameLoop():
  
     x1_change = 0
     y1_change = 0
-    # Defines the length of the snake, along with an array that will be used to track the length.
+ 
     snake_List = []
     Length_of_snake = 1
  
@@ -56,7 +63,8 @@ def gameLoop():
         while game_close == True:
             dis.fill(blue)
             message("You Lost! Press C-Play Again or Q-Quit", red)
- 
+            # Will define the score which depends on the length of the snake.
+            Your_score(Length_of_snake - 1)
             pygame.display.update()
  
             for event in pygame.event.get():
@@ -90,20 +98,19 @@ def gameLoop():
         y1 += y1_change
         dis.fill(blue)
         pygame.draw.rect(dis, green, [foodx, foody, snake_block, snake_block])
-        # Code that is used to track how large the snake is.
         snake_Head = []
         snake_Head.append(x1)
         snake_Head.append(y1)
         snake_List.append(snake_Head)
         if len(snake_List) > Length_of_snake:
             del snake_List[0]
-       # Lines of code used to destroy the snake when it hits own body.
+ 
         for x in snake_List[:-1]:
             if x == snake_Head:
                 game_close = True
  
         our_snake(snake_block, snake_List)
- 
+        Your_score(Length_of_snake - 1)
  
         pygame.display.update()
  
